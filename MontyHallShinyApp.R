@@ -51,3 +51,21 @@ server <- function(input, output) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
+
+
+# monty_hall <- function(switch = logical()){
+#     doors <- c(1, 2, 3)
+#     names(doors) <- sample(c("Lose", "Lose", "Win"))
+#     winner <- which(names(doors) == "Win")
+#     guess <- sample(doors, 1)
+#     if(guess == winner){
+#         reveal <- sample(doors[doors != winner], 1)
+#     } else {
+#         reveal <- doors[doors != winner & doors != guess]
+#     }
+#     if (switch == TRUE) {
+#         switched_door <- doors[doors != guess & doors != reveal]
+#         return(winner == switched_door)
+#     } else {
+#         return(winner == guess)}}
+
